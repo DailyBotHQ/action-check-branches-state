@@ -1,0 +1,4 @@
+local/.env
+local/app/.env
+production/nginx/.env
+production/nginx/default.conf

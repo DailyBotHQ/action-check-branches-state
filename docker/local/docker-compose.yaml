@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  ghactioncheckbranches:
+    build:
+      context: .
+      dockerfile: ./ghactionCheckBranches/Dockerfile
+    working_dir: /app
+    volumes:
+      - ../..:/app
+    env_file:
+      - ghactionCheckBranches/.env
+    command:
+      - /bin/sh
+      - -c
+      - |
+        npm install
+        chown -R ${SERVICE_PERMISSIONS} /app
+        sleep infinity

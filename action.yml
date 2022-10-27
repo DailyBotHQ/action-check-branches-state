@@ -1,0 +1,13 @@
+name: 'Check Branches State'
+description: 'Notify branches state'
+author: 'DailyBot'
+inputs:
+  daysOld:
+    description: 'How many days old the branch is'
+    default: '30'
+branding:
+  icon: 'git-branch'
+  color: 'orange'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
