@@ -1,0 +1,1 @@
+# GitHub action base test to allow check branches state.
