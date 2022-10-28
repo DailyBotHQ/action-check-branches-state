@@ -1,12 +1,12 @@
 {
-	"name": "GHAction Check Age of Branches - DailyBot",
+	"name": "GHAction Check Branches State - DailyBot",
 	"dockerComposeFile": "../docker/local/docker-compose.yaml",
-	"service": "ghactioncheckbranches",
+	"service": "actioncheckbranches",
 	"workspaceFolder": "/app",
 	"settings": {
 		"terminal.integrated.defaultProfile.linux": "bash"
   },
-	"runServices": ["ghactioncheckbranches"],
+	"runServices": ["actioncheckbranches"],
 	"extensions": [
 		"VisualStudioExptTeam.vscodeintellicode",
 		"swyphcosmo.spellchecker",

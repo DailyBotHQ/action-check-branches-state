@@ -1,15 +1,15 @@
 version: '3'
 
 services:
-  ghactioncheckbranches:
+  actioncheckbranches:
     build:
       context: .
-      dockerfile: ./ghactionCheckBranches/Dockerfile
+      dockerfile: ./actionCheckBranches/Dockerfile
     working_dir: /app
     volumes:
       - ../..:/app
     env_file:
-      - ghactionCheckBranches/.env
+      - actionCheckBranches/.env
     command:
       - /bin/sh
       - -c

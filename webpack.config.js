@@ -3,6 +3,7 @@ const CleanWebPackPlugin = require('clean-webpack-plugin')
 
 module.exports = (env, argv) => {
   let config = {
+    target: 'node',
     entry: {
       index: {
         import: './src/index.ts',
