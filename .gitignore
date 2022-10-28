@@ -16,8 +16,8 @@ src/databases
 # Config
 config/environment.json
 claudia.json
-dist
-# build
+# dist
+build
 dive.log
 result.xml
 .nyc_output
